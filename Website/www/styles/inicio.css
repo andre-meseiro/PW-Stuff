@@ -1,0 +1,104 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #1E1E24;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #6564DB;
+  color: white;
+}
+
+html {
+  background: linear-gradient(to right, #D4D2D5, lightgray);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 0px;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top:  0px;
+  margin-left: 10px;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 12pt;
+  padding: 0;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-items: normal;
+  justify-content: normal;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+
+footer {
+  display: flex;
+  text-align: left;
+  font-size: 0.9em;
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 10%;
+  flex-basis: 100%;
+  justify-content: left;
+  margin-top: 155px;
+  margin-bottom: 20px;
+  border-top: 3px solid black;
+}
+
+p {
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+figure {
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-device-width: 900px),
+(orientation: landscape) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+}
