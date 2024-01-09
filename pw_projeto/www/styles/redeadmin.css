@@ -1,0 +1,94 @@
+#portefoliosCompany {
+    background-color: gainsboro;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #280a0a;
+    padding: 0;
+    overflow-y: scroll;
+    height: 530px;
+}
+
+#companiesList {
+    margin-top: 75px;
+    background-color: gainsboro;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #280a0a;
+    padding: 0;
+    overflow-y: scroll;
+    height: 530px;
+}
+
+.portefolioPro {
+    margin: 10px;
+    padding: 10px;
+    background-color: darkgray;
+    list-style-type: none;
+}
+
+.company-line {
+    margin: 10px;
+    padding: 10px;
+    background-color: darkgray;
+    list-style-type: none;
+}
+
+#filterCompany {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonFilterCompany {
+    padding: 5px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.li-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.content {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.sectionTitle {
+    margin-left: 37%;
+    margin-bottom: 30px;
+}
+
+form {
+    display: inline;
+}
+
+.formButtons {
+    padding: 5px;
+    width: 15%;
+}
+
+#buttonApprove {
+    background-color: rgb(14, 117, 17);
+}
+
+#buttonApprove:hover {
+    background-color: rgb(42, 195, 47);
+}
+
+#buttonReject {
+    background-color: rgb(168, 23, 10);
+}
+
+#buttonReject:hover {
+    background-color: rgb(255, 8, 0);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}

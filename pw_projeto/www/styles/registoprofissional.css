@@ -1,0 +1,190 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #280a0a;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #b52e2e;
+  color: white;
+}
+
+.primary-icon {
+  height: 18px;
+}
+
+html {
+  background: linear-gradient(to right, #ffffd8, white);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 0px;
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 12pt;
+  padding: 0;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-items: normal;
+  justify-content: normal;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+form {
+  width: 500px;
+  padding: 1em;
+  margin-left: 15px;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+fieldset {
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+label {
+  padding-right: 0.2em;
+}
+
+#nome {
+  width: 180px;
+  margin-right: 1.6em;
+  margin-bottom: 1em;
+}
+
+#datanasc {
+  margin-right: 1.6em;
+  margin-bottom: 1em;
+}
+
+#masculino {
+  margin-top: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+#feminino {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+#descricao {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+#email {
+  width: 180px;
+  margin-right: 1.6em;
+  margin-bottom: 1em;
+}
+
+#palavrapasse {
+  width: 200px;
+  margin-right: 1.6em;
+  margin-bottom: 1em;
+}
+
+#localidade {
+  width: 195px;
+  margin-right: 1.6em;
+  margin-bottom: 1em;
+}
+
+#visto {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+#btnSubmeter {
+  margin-right: 5px;
+}
+
+legend {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+input:focus {
+  border-color: black;
+}
+
+footer {
+  display: flex;
+  text-align: left;
+  font-size: 0.9em;
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 10%;
+  flex-basis: 100%;
+  justify-content: left;
+  margin-top: 155px;
+  border-top: 3px solid black;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+address a {
+  color: black;
+  font-weight: bold;
+}
+
+address a:active {
+  color: #b52e2e;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-device-width: 900px),
+(orientation: landscape) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+}

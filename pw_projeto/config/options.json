@@ -1,0 +1,12 @@
+{
+    "server": {
+        "host": "127.0.0.1",
+        "port": 8081
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "mesero321",
+        "database": "rede_portefolios"
+    }
+}

@@ -1,0 +1,29 @@
+extends redePortefolios
+
+append styles
+    link(rel='stylesheet' type='text/css' href='styles/redecompany.css')
+
+append scripts 
+    script(src="/redeportefolios/scripts/companyFilters.js")
+
+block content 
+    article
+        br
+        span(id="filterCompany")
+            input(class="buttonFilterCompany" id="filterByLocality" type="button" name="filterByLocality" value="Filtrar por Localidade")
+            input(class="buttonFilterCompany" id="filterByAge" type="button" name="filterByAge" value="Filtrar por Idade")
+            input(class="buttonFilterCompany" id="reset" type="button" name="reset" value="Limpar Filtros")
+        ul(id="portefoliosCompany")
+            each val, key in professionals
+                ul(class="portefolioPro")
+                    li(class="li-title")="Dados:"
+                    li= `Nome: ${val.name}  |  Género: ${val.gender}  |  Data de Nascimento: ${val.birthDate}  |  Localidade: ${val.locality}`
+                    li=`Descrição: ${val.description}`
+                    li(class="li-title")="Formação:"
+                    ul(id="education")
+                        each value,valkey in val.education
+                            li=`Lugar de Formação: ${value.place_of_education} | Nome da Formação: ${value.name} | Tipo: ${value.type} ${value.average?`| Média: ${value.average}`:""}`
+                    li(class="li-title")="Locais de Trabalho Anterior:"
+                    ul(id="workplace")
+                        each value,valkey in val.workplace
+                            li=`Lugar de Trabalho: ${value.name} | Função Desempenhada: ${value.functions_description} | ${value.date_start} a ${value.date_end}`

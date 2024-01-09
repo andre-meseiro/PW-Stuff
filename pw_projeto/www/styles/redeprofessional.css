@@ -1,0 +1,54 @@
+#portefolioInfo {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(224, 221, 221);
+    list-style-type: none;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    overflow-y: scroll;
+    height: 570px;
+}
+
+#display {
+    overflow-y: scroll;
+}
+
+.li-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.content {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.sectionTitle {
+    margin-left: 37%;
+    margin-bottom: 30px;
+}
+
+.buttonsEdit {
+    padding: 5px;
+    font-size: 25px;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin-top: 20px;
+}
+
+#visto{
+    width: 100px;
+}

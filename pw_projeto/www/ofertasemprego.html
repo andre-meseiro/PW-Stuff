@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ofertasemprego/styles/ofertasemprego.css">
+    <link rel="icon" type="image/jpg" href="images/shortcuticon.jpg">
+    <script src="ofertasemprego/scripts/ItemInformacaoOfertas.js"></script>
+    <script src="ofertasemprego/scripts/InformacaoOfertas.js"></script>
+    <script src="ofertasemprego/scripts/domOfertas.js"></script>
+    <title>Ofertas de Emprego</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ofertas de Emprego</h1>
+    </header>
+    
+
+
+    <nav class="topnav">
+        <a href="#" style="pointer-events: none">
+            <img class="primary-icon" src="images/icon.png" />
+        </a>
+        <a href="/">Início</a>
+        <a href="portefolios">Portefólio de Currículos</a>
+        <a href="equipadesenvolvimento">Equipa de Desenvolvimento</a>
+    </nav>
+
+    <article>
+        <a href="javascript: dados.emLista(' | ');">Lista de ofertas de emprego</a>
+        <p><b>Nome da Empresa | Descrição da Oferta | Área Associada | Duração (em meses) | Valor Total (em €) | Data de
+                Validade | Contacto da Empresa</p></b>
+        <section id="informacao">
+        </section>
+        <input id="btnOrdenarValorAsc" type="button" value="Ordenar por Valor Base Ascendente">
+        <input id="btnOrdenarValorDesc" type="button" value="Ordenar por Valor Base Descendente">
+        <input id="btnOrdenarDataAsc" type="button" value="Ordenar por Data de Validade Ascendente">
+        <input id="btnOrdenarDataDesc" type="button" value="Ordenar por Data de Validade Descendente">
+        <input id="btnFiltrarDuracao" type="button" value="Filtrar por Duração">
+        <input id="btnFiltrarArea" type="button" value="Filtrar por Área">
+        <input id="btnFiltrarAmbos" type="button" value="Filtrar por Duração e Área">
+    </article>
+</body>
+<footer>
+    <address>
+        <br>Desenvolvido por: André Meseiro e Pedro Anjos (para mais info, ver <a href="equipadesenvolvimento">Equipa de
+            Desenvolvimento</a> &copy)</br>
+        <br>E-mails:</br>
+        <a href="mailto:202100225@estudantes.ips.pt">202100225@estudantes.ips.pt</a>
+        <br></br>
+        <a href="mailto:202100230@estudantes.ips.pt">202100230@estudantes.ips.pt</a>.
+    </address>
+</footer>
+
+</html>

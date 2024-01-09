@@ -1,0 +1,31 @@
+doctype html
+html(lang="pt")
+    head
+        meta(charset="utf-8")
+        block styles
+        link(rel='stylesheet' type='text/css' href='styles/redeportefolios.css')
+        link(rel="icon" type="image/jpg" href="../images/shortcuticon.jpg")
+        block scripts
+        title Rede de Portefólios
+    body
+        header 
+            h1(id="title") Rede de Portefólios
+        nav(class="topnav")
+            a(href="#" style="pointer-events: none")
+                img(class="primary-icon" src="../images/icon.png")
+            a(href="/portefolios") Voltar ao Website
+        block content
+        footer
+            address
+                | Desenvolvido por: André Meseiro e Pedro Anjos (para mais info, ver 
+                a(href="/equipadesenvolvimento") Equipa de Desenvolvimento
+                |  &copy)
+                br
+                br
+                | E-mails:
+                br
+                a(href="mailto:202100225@estudantes.ips.pt") 202100225@estudantes.ips.pt
+                |
+                br
+                br
+                a(href="mailto:202100230@estudantes.ips.pt") 202100230@estudantes.ips.pt

@@ -1,0 +1,32 @@
+extends redePortefolios
+
+append styles
+    link(rel='stylesheet' type='text/css' href='styles/redeprofessional.css')
+
+append scripts 
+    script(src="/redeportefolios/scripts/userEdit.js")
+
+block content 
+    main
+        section(id="portefolio")
+            ul(id="portefolioInfo")
+                li(class="li-title")="Dados:"
+                li(id="name")=`Nome: ${portefolio.name}`
+                li(id="gender")=`Género: ${portefolio.gender}`
+                li(id="dateBirth")=`Data de Nascimento: ${portefolio.birthDate}`
+                li(id="locality")=`Localidade: ${portefolio.locality}`
+                li(id="description")=`Descrição: ${portefolio.description}`
+                li(id="li-visible" name="li-visible")=`Vísivel para Empresas: ${portefolio.visible?"Sim":"Não"}`
+                input(id="visible" type="hidden" name="visible" value=portefolio.visible)
+                li(class="li-title")="Formação:"
+                ul(id="education")
+                    each portefolioue,portefoliokey in portefolio.education 
+                        li=`Lugar de Formação: ${portefolioue.place_of_education} | Nome da Formação: ${portefolioue.name} | Tipo: ${portefolioue.type} ${portefolioue.average?`| Média: ${portefolioue.average}`:""}`
+                li(class="li-title")="Locais de Trabalho Anterior:"
+                ul(id="workplace")
+                    each portefolioue,portefoliokey in portefolio.workplace
+                        li=`Lugar de Trabalho: ${portefolioue.name} | Função Desempenhada: ${portefolioue.functions_description} | ${portefolioue.date_start} a ${portefolioue.date_end}`
+            span(id="buttons")
+                input(class="buttonsEdit" id="buttonEdit" type="button" name="buttonEdit" value="Editar Dados")
+                input(class="buttonsEdit" id="buttonEditEducation" type="button" name="buttonEditEducation" value="Editar Formação")
+                input(class="buttonsEdit" id="buttonEditWorkplace" type="button" name="buttonEditEditWorkplace" value="Editar Locais de Trabalho")

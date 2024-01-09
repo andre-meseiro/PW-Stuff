@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/javascript" src="login/scripts/validateLogin.js"></script>
+    <link rel="stylesheet" type="text/css" href="login/styles/login.css">
+    <link rel="icon" type="image/jpg" href="images/shortcuticon.jpg">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>Iniciar Sessão</h1>
+        <nav class="topnav">
+            <a href="#" style="pointer-events: none">
+                <img class="primary-icon" src="images/icon.png" />
+            </a>
+            <a href="portefolios">Voltar</a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Efetue o início de sessão</h2>
+        <form id="frmLogin" name="frmLogin" action="login/validate" method="POST">
+            <fieldset>
+                <legend>Dados para iniciar sessão</legend>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Introduza o seu email" />
+                <br />
+                <label for="palavrapasse">Palavra-passe:</label>
+                <input id="palavrapasse" name="palavrapasse" type="password" />
+                <br />
+                <input id="btnSubmeter" name="btnSubmeter" type="submit" value="Submeter" />
+                <input id="btnLimpar" name="btnLimpar" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+<footer>
+    <address>
+        <br>Desenvolvido por: André Meseiro e Pedro Anjos (para mais info, ver <a href="equipadesenvolvimento">Equipa de
+            Desenvolvimento</a> &copy)</br>
+        <br>E-mails:</br>
+        <a href="mailto:202100225@estudantes.ips.pt">202100225@estudantes.ips.pt</a>
+        <br></br>
+        <a href="mailto:202100230@estudantes.ips.pt">202100230@estudantes.ips.pt</a>.
+    </address>
+</footer>
+</html>

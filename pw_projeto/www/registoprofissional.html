@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/javascript" src="registoprofissional/scripts/validateRegistoPro.js"></script>
+    <link rel="stylesheet" type="text/css" href="registoprofissional/styles/registoprofissional.css">
+    <link rel="icon" type="image/jpg" href="images/shortcuticon.jpg">
+    <title>Registo de Profissional</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registo Profissional</h1>
+        <nav class="topnav">
+            <a href="#" style="pointer-events: none">
+                <img class="primary-icon" src="images/icon.png" />
+            </a>
+            <a href="portefolios">Voltar</a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Efetue o registo de um profissional</h2>
+
+        <form id="frmRegistoPro" name="frmRegistoPro" action="profissional/registo" method="POST">
+            <fieldset>
+                <legend>Dados para registar</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Introduza o seu nome" />
+                <br />
+                <label for="datanasc">Data nascimento:</label>
+                <input id="datanasc" name="datanasc" type="date" placeholder="Introduza a sua data de nascimento" />
+                <br />
+                <label>Género</label>
+                <br />
+                <label for="masculino">Masculino:</label>
+                <input id="masculino" name="genero" type="radio" value="M" />
+                <label for="feminino">Feminino:</label>
+                <input id="feminino" name="genero" type="radio" value="F" />
+                <br />
+                <label for="descricao">Descrição</label>
+                <br />
+                <textarea id="descricao" name="descricao" rows="5" cols="50"
+                    placeholder="Introduza a sua descrição"></textarea>
+                <br />
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Introduza o seu email" />
+                <br />
+                <label for="palavrapasse">Palavra-passe:</label>
+                <input id="palavrapasse" name="palavrapasse" type="password" />
+                <br />
+                <label for="localidade">Localidade:</label>
+                <input id="localidade" name="localidade" type="text" placeholder="Introduza a localidade onde vive" />
+                <br />
+                <label>Quer ser visto por empresas?</label>
+                <br />
+                <select id="visto" name="visto">
+                    <option value="none" selected>--- Selecione ---</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <br />
+                <input id="btnSubmeter" name="btnSubmeter" type="submit" value="Submeter" />
+                <input id="btnLimpar" name="btnLimpar" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+<footer>
+    <address>
+        <br>Desenvolvido por: André Meseiro e Pedro Anjos (para mais info, ver <a href="equipadesenvolvimento">Equipa de
+            Desenvolvimento</a> &copy)</br>
+        <br>E-mails:</br>
+        <a href="mailto:202100225@estudantes.ips.pt">202100225@estudantes.ips.pt</a>
+        <br></br>
+        <a href="mailto:202100230@estudantes.ips.pt">202100230@estudantes.ips.pt</a>.
+    </address>
+</footer>
+
+</html>
